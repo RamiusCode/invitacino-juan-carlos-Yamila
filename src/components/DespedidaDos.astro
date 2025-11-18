@@ -2,9 +2,26 @@
 // Agradecimiento.astro
 ---
 
-<section class="relative w-full py-4 md:py-20 px-6">
+<section class="relative w-full py-4 md:py-20 px-6 overflow-hidden">
   
-  <div class="max-w-3xl mx-auto">
+  <!-- Flores decorativas en esquinas inferiores -->
+  <div class="absolute bottom-0 right-0 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
+    <img 
+      src="/imagenes/FloresDerechaAbajo.png" 
+      alt="Flores decorativas" 
+      class="w-full h-full object-contain object-bottom-right"
+    />
+  </div>
+
+  <div class="absolute bottom-0 left-0 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
+    <img 
+      src="/imagenes/FloresIzquierdaAbajo.png" 
+      alt="Flores decorativas" 
+      class="w-full h-full object-contain object-bottom-left"
+    />
+  </div>
+
+  <div class="max-w-3xl mx-auto relative z-10">
 
     <!-- Contenido -->
     <div class="text-center">
@@ -46,5 +63,14 @@
 <style>
   .font-charm {
     font-family: 'Charm', cursive !important;
+  }
+
+  /* Asegurar que las flores toquen el borde inferior */
+  .object-bottom-right {
+    object-position: bottom right;
+  }
+
+  .object-bottom-left {
+    object-position: bottom left;
   }
 </style>

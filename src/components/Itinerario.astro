@@ -25,8 +25,6 @@
         />
       </div>
 
-    
-
       <!-- TÍTULO -->
       <div class="text-center mb-8" id="titulo-itinerario">
         <h2 class="font-charm text-2xl md:text-3xl lg:text-3xl text-[#8bcdcd] font-bold mb-4">
@@ -186,55 +184,6 @@
   </div>
 </section>
 
-<script>
-  import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  if (typeof window !== 'undefined') {
-    document.addEventListener("DOMContentLoaded", () => {
-      // 🎯 ESTADO INICIAL
-      gsap.set("#flores-itinerario", { opacity: 0, y: -30, scale: 0.8 });
-      gsap.set("#titulo-itinerario", { opacity: 0, y: -20 });
-      gsap.set("#linea-central", { opacity: 0, scaleY: 0, transformOrigin: "top" });
-      gsap.set(".corazon-item", { opacity: 0, scale: 0 });
-      
-      gsap.set("#hoja-itinerario-izq", { opacity: 0, x: -30 });
-      gsap.set("#hoja-itinerario-der", { opacity: 0, x: 30 });
-      
-      gsap.set(".imagen-izq", { opacity: 0, x: -150, scale: 0.7 });
-      gsap.set(".imagen-der", { opacity: 0, x: 150, scale: 0.7 });
-      
-      gsap.set(".texto-izq", { opacity: 0, x: -100 });
-      gsap.set(".texto-der", { opacity: 0, x: 100 });
-
-      ScrollTrigger.create({
-        trigger: "#flores-itinerario",
-        start: "top 85%",
-        onEnter: () => {
-          const tl = gsap.timeline();
-
-          tl.to("#flores-itinerario", { opacity: 1, y: 0, scale: 1, duration: 1.2, ease: "back.out(1.5)" })
-          .to("#titulo-itinerario", { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "<")
-          .to("#linea-central", { opacity: 1, scaleY: 1, duration: 1.5, ease: "power2.inOut" }, "<")
-          .to(".corazon-item", { opacity: 1, scale: 1, duration: 1.2, ease: "back.out(1.5)" }, "<")
-          .to("#hoja-itinerario-izq", { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" }, "<")
-          .to("#hoja-itinerario-der", { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" }, "<")
-          .to(".imagen-izq", { opacity: 1, x: 0, scale: 1, duration: 1.3, ease: "power3.out" }, "<")
-          .to(".imagen-der", { opacity: 1, x: 0, scale: 1, duration: 1.3, ease: "power3.out" }, "<")
-          .to(".texto-izq", { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" }, "<")
-          .to(".texto-der", { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" }, "<");
-
-          gsap.to(".corazon-item", { scale: 1.08, duration: 2, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.5 });
-          gsap.to("#hoja-itinerario-izq", { y: -5, rotation: -2, duration: 2.5, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.5 });
-          gsap.to("#hoja-itinerario-der", { y: -5, rotation: 2, duration: 2.5, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.7 });
-        }
-      });
-    });
-  }
-</script>
-
 <style>
   .font-charm {
     font-family: 'Charm', cursive !important;
@@ -271,10 +220,5 @@
 
   #linea-central {
     box-shadow: 0 0 15px rgba(139, 205, 205, 0.3);
-  }
-
-  #hoja-itinerario-izq,
-  #hoja-itinerario-der {
-    will-change: transform;
   }
 </style>
