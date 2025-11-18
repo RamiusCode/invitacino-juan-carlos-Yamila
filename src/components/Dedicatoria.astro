@@ -1,0 +1,140 @@
+---
+// InvitationText.astro
+---
+
+<section class="relative w-full">
+  <!-- Contenedor del texto con fondo de textura -->
+  <div class="relative w-full px-3 py-8 md:py-20">
+    <!-- Imagen de textura de fondo -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/imagenes/Textura.png" 
+        alt="Textura" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Todo el texto sobre la textura -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      
+
+
+      <!-- Primer párrafo -->
+      <p class=" font-charm text-[#8bcdcd] text-2xl md:text-2xl leading-relaxed font-light px-4 mb-4">
+        Con gran ilusión, queremos invitarte a ser parte de esta hermosa etapa de nuestro amor...
+      </p>
+      
+      <!-- Divisor decorativo -->
+      <div class="flex items-center justify-center gap-4 my-6">
+        <div class="h-px w-20 bg-gradient-to-r from-transparent to-[#8bcdcd]"></div>
+        <div class="w-2 h-2 rounded-full bg-[#8bcdcd]"></div>
+        <div class="h-px w-20 bg-gradient-to-l from-transparent to-[#8bcdcd]"></div>
+      </div>
+
+      <!-- Frase de bendición -->
+      <div class="mb-6">
+        <p class="font-charm text-2xl md:text-3xl text-[#8bcdcd]  leading-relaxed px-4">
+          Con la bendición de Dios y de nuestros padres
+        </p>
+      </div>
+
+      <!-- Divisor decorativo -->
+      <div class="flex items-center justify-center gap-3 my-4">
+        <div class="h-px w-16 bg-[#8bcdcd]"></div>
+        <svg class="w-8 h-8 text-[#8bcdcd]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <div class="h-px w-16 bg-[#8bcdcd]"></div>
+      </div>
+
+      <!-- Grid de padres -->
+      <div class="grid md:grid-cols-2 gap-6 md:gap-16 mt-6 px-4">
+        
+        <!-- Padres del novio -->
+        <div class="space-y-4">
+          <div class="mb-5">
+            <h3 class="font-charm text-2xl md:text-3xl text-gray-800 mb-2">
+              Padres del novio
+            </h3>
+            <div class="h-px w-20 bg-[#8bcdcd] mx-auto"></div>
+          </div>
+          <p class="text-xl text-gray-700 font-light leading-relaxed">
+            Osman Cuchallo Farel
+          </p>
+          <p class="text-xl text-gray-700 font-light leading-relaxed">
+            Arminda Aguilar Vidal
+          </p>
+        </div>
+
+        <!-- Padres de la novia -->
+        <div class="space-y-4">
+          <div class="mb-5">
+            <h3 class="font-charm text-2xl md:text-3xl text-gray-800 mb-2">
+              Padres de la novia
+            </h3>
+            <div class="h-px w-20 bg-[#8bcdcd] mx-auto"></div>
+          </div>
+          <p class="text-xl text-gray-700 font-light leading-relaxed">
+            Roberto Rubén Labarden Cuellar
+          </p>
+          <p class="text-xl text-gray-700 font-light leading-relaxed">
+            Martha Contreras Velásquez
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Foto de los novios -->
+  <div class="w-full">
+    <img 
+      src="/imagenes/Foto2.webp" 
+      alt="Juan Carlos y Yamila" 
+      class="w-full h-auto object-cover"
+    />
+  </div>
+</section>
+
+<style>
+  /* Animación suave al cargar */
+  section {
+    animation: fadeIn 1.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Animación para el texto */
+  p, h3 {
+    animation: slideUp 1.2s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Sombra suave para mejor legibilidad */
+  p, h3 {
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+  }
+
+  /* Para texto con Charm */
+  .font-charm {
+    font-family: 'Charm', cursive !important;
+  }
+</style>

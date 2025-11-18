@@ -1,16 +1,39 @@
 ---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+
+
+import NombresFlores from '../components/NombresFlores.astro';
+import Dedicatoria from '../components/Dedicatoria.astro';
+import Reproductor from '../components/Reproductor.astro';
+import Calendario from '../components/Calendario.astro';
+import Contador from '../components/Contador.astro';
+import Direccioniglesia from '../components/DireccionIglesia.astro';
+import DireccionRecepcion from '../components/DireccionRecepcion.astro';
+import Itinerario from '../components/Itinerario.astro';
+import Foto from '../components/Foto.astro';
+import Detalles from '../components/Detalles.astro';
+import DespedidaUno from '../components/Despedidauno.astro';
+import DespedidaDos from '../components/DespedidaDos.astro';
+import Foto4 from '../components/Foto4.astro';
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Mi boda">
+
+<NombresFlores/>
+<Dedicatoria/>
+<Reproductor/>
+<Calendario/>
+<Contador/>
+<Direccioniglesia/>
+<DireccionRecepcion/>
+<Itinerario/>
+<Foto/>
+<Detalles/>
+<DespedidaUno/>
+<Foto4/>
+<DespedidaDos/>
+
+
+</Layout>
