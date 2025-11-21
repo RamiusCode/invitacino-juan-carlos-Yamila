@@ -2,12 +2,12 @@
 // MusicPlayer.astro
 ---
 
-<section class="relative w-full py-8 md:py-20" style="background-color: #8bcdcd;">
+<section class="relative w-full py-8 md:py-20" style="background-color: #f5f5dc;">
   <div class="max-w-2xl mx-auto px-6">
     
     <!-- Texto superior -->
     <div class="text-center mb-4">
-      <p class="text-white text-lg md:text-xl font-light">
+      <p class="text-[#6b5744] text-lg md:text-xl font-light">
         Dale Play para escuchar nuestra canción.
       </p>
     </div>
@@ -21,22 +21,22 @@
         <!-- Botón Play/Pause -->
         <button 
           id="playPauseBtn"
-          class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-all duration-300 focus:outline-none"
+          class="flex-shrink-0 w-12 h-12 rounded-full bg-[#f5f5dc] hover:bg-[#e8dcc4] flex items-center justify-center transition-all duration-300 focus:outline-none"
         >
-          <svg id="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-700 ml-1">
+          <svg id="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#8b7355] ml-1">
             <path d="M8 5v14l11-7z"/>
           </svg>
-          <svg id="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-700 hidden">
+          <svg id="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#8b7355] hidden">
             <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
           </svg>
         </button>
 
         <!-- Barra de progreso y tiempos -->
         <div class="flex-1">
-          <div class="flex items-center gap-2 text-sm text-gray-600 mb-2">
+          <div class="flex items-center gap-2 text-sm text-[#6b5744] mb-2">
             <span id="currentTime" class="font-medium">0:00</span>
-            <span class="text-gray-400">/</span>
-            <span id="totalDuration" class="text-gray-500">0:00</span>
+            <span class="text-[#a89a85]">/</span>
+            <span id="totalDuration" class="text-[#8b7355]">0:00</span>
           </div>
           
           <!-- Barra de progreso -->
@@ -50,8 +50,8 @@
         </div>
 
         <!-- Botón de volumen/opciones -->
-        <button class="flex-shrink-0 w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition-all duration-300 focus:outline-none">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-600">
+        <button class="flex-shrink-0 w-10 h-10 rounded-full hover:bg-[#f5f5dc] flex items-center justify-center transition-all duration-300 focus:outline-none">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#8b7355]">
             <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
           </svg>
         </button>
@@ -214,7 +214,7 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #8bcdcd;
+    background: #d4af37;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -222,14 +222,14 @@
 
   .slider-custom::-webkit-slider-thumb:hover {
     transform: scale(1.2);
-    box-shadow: 0 3px 8px rgba(139, 205, 205, 0.5);
+    box-shadow: 0 3px 8px rgba(212, 175, 55, 0.5);
   }
 
   .slider-custom::-moz-range-thumb {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #8bcdcd;
+    background: #d4af37;
     cursor: pointer;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

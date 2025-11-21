@@ -2,60 +2,57 @@
 // SaveTheDate.astro
 ---
 
-<section class="relative w-full  md:py-12 ">
+<section class="relative w-full md:py-12 bg-[#f5f5dc]">
   <div class="max-w-lg mx-auto relative">
     
-    <!-- Imagen de fondo degradado -->
-    <div class="absolute inset-0 z-0 rounded-3xl overflow-hidden">
-      <img 
-        src="/imagenes/FondoDegradado.png" 
-        alt="Fondo" 
-        class="w-full h-full object-cover"
-      />
-      <!-- Overlay suave para mejorar legibilidad -->
-      <div class="absolute inset-0 bg-white/30"></div>
-    </div>
-
     <!-- Contenido -->
     <div class="relative z-10 px-4 md:px-8 py-10 md:py-12">
       
       <!-- Flores decorativas superiores - PEGADAS AL BORDE -->
       <div class="absolute top-0 left-0 w-32 md:w-40 pointer-events-none">
         <img 
-          src="/imagenes/FloresIzquierda.png" 
-          alt="Flores decorativas" 
+          src="/imagenes/florIzquierda.webp" 
+          alt="Flores decorativas izquierda" 
+          class="w-full h-auto object-contain"
+        />
+      </div>
+
+      <div class="absolute top-0 right-0 w-32 md:w-40 pointer-events-none">
+        <img 
+          src="/imagenes/florDerecha.webp" 
+          alt="Flores decorativas derecha" 
           class="w-full h-auto object-contain"
         />
       </div>
 
       <!-- Título Save the Date -->
       <div class="text-center mb-4 mt-4">
-        <h2 class="font-charm text-2xl md:text-7xl mb-2" style="color: #8bcdcd; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h2 class="font-charm text-2xl md:text-7xl mb-2" style="color: #d4af37; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
           Fecha
         </h2>
-        <h3 class=" font-charm text-2xl md:text-4xl font-light tracking-widest text-gray-700">
+        <h3 class="font-charm text-2xl md:text-4xl font-light tracking-widest text-[#6b5744]">
          del evento
         </h3>
       </div>
 
       <!-- Fecha destacada -->
       <div class="text-center mb-8">
-        <p class="text-xl md:text-2xl text-gray-700 font-medium tracking-wide">
+        <p class="text-xl md:text-2xl text-[#6b5744] font-medium tracking-wide">
           20 DICIEMBRE 2025
         </p>
       </div>
 
       <!-- Calendario -->
-      <div class="mb-8 bg-white/40 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-lg">
+      <div class="mb-8 bg-white/60 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-lg">
         <!-- Días de la semana -->
         <div class="grid grid-cols-7 gap-2 mb-4">
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">LUN</div>
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">MAR</div>
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">MIE</div>
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">JUE</div>
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">VIE</div>
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">SAB</div>
-          <div class="text-center text-xs md:text-sm font-semibold" style="color: #8bcdcd;">DOM</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">LUN</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">MAR</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">MIE</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">JUE</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">VIE</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">SAB</div>
+          <div class="text-center text-xs md:text-sm font-semibold" style="color: #d4af37;">DOM</div>
         </div>
 
         <!-- Días del mes - Diciembre 2025 -->
@@ -64,69 +61,69 @@
           
           <!-- Días del 1 al 7 -->
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">1</span>
+            <span class="text-sm md:text-base text-[#6b5744]">1</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">2</span>
+            <span class="text-sm md:text-base text-[#6b5744]">2</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">3</span>
+            <span class="text-sm md:text-base text-[#6b5744]">3</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">4</span>
+            <span class="text-sm md:text-base text-[#6b5744]">4</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">5</span>
+            <span class="text-sm md:text-base text-[#6b5744]">5</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">6</span>
+            <span class="text-sm md:text-base text-[#6b5744]">6</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">7</span>
+            <span class="text-sm md:text-base text-[#6b5744]">7</span>
           </div>
 
           <!-- Días del 8 al 14 -->
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">8</span>
+            <span class="text-sm md:text-base text-[#6b5744]">8</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">9</span>
+            <span class="text-sm md:text-base text-[#6b5744]">9</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">10</span>
+            <span class="text-sm md:text-base text-[#6b5744]">10</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">11</span>
+            <span class="text-sm md:text-base text-[#6b5744]">11</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">12</span>
+            <span class="text-sm md:text-base text-[#6b5744]">12</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">13</span>
+            <span class="text-sm md:text-base text-[#6b5744]">13</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">14</span>
+            <span class="text-sm md:text-base text-[#6b5744]">14</span>
           </div>
 
           <!-- Días del 15 al 21 -->
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">15</span>
+            <span class="text-sm md:text-base text-[#6b5744]">15</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">16</span>
+            <span class="text-sm md:text-base text-[#6b5744]">16</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">17</span>
+            <span class="text-sm md:text-base text-[#6b5744]">17</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">18</span>
+            <span class="text-sm md:text-base text-[#6b5744]">18</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">19</span>
+            <span class="text-sm md:text-base text-[#6b5744]">19</span>
           </div>
           
           <!-- ⭐ DÍA 20 - DÍA ESPECIAL ⭐ -->
-          <div class="aspect-square flex items-center justify-center rounded-full shadow-xl relative" style="background: linear-gradient(135deg, #8bcdcd, #6bb6b6);">
+          <div class="aspect-square flex items-center justify-center rounded-full shadow-xl relative" style="background: linear-gradient(135deg, #d4af37, #c19a2e);">
             <span class="text-xl md:text-2xl font-bold text-white">20</span>
             <!-- Corazón decorativo -->
             <div class="absolute -top-1 -right-1">
@@ -137,54 +134,51 @@
           </div>
 
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">21</span>
+            <span class="text-sm md:text-base text-[#6b5744]">21</span>
           </div>
 
           <!-- Días del 22 al 28 -->
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">22</span>
+            <span class="text-sm md:text-base text-[#6b5744]">22</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">23</span>
+            <span class="text-sm md:text-base text-[#6b5744]">23</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">24</span>
+            <span class="text-sm md:text-base text-[#6b5744]">24</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">25</span>
+            <span class="text-sm md:text-base text-[#6b5744]">25</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">26</span>
+            <span class="text-sm md:text-base text-[#6b5744]">26</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">27</span>
+            <span class="text-sm md:text-base text-[#6b5744]">27</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">28</span>
+            <span class="text-sm md:text-base text-[#6b5744]">28</span>
           </div>
 
           <!-- Días 29, 30 y 31 -->
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">29</span>
+            <span class="text-sm md:text-base text-[#6b5744]">29</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">30</span>
+            <span class="text-sm md:text-base text-[#6b5744]">30</span>
           </div>
           <div class="aspect-square flex items-center justify-center rounded-lg bg-white/60 hover:bg-white transition-colors">
-            <span class="text-sm md:text-base text-gray-700">31</span>
+            <span class="text-sm md:text-base text-[#6b5744]">31</span>
           </div>
         </div>
       </div>
 
       <!-- Divisor decorativo -->
       <div class="flex items-center justify-center gap-4 my-8">
-        <div class="h-px w-24" style="background: linear-gradient(to right, transparent, #8bcdcd);"></div>
-        <span class="font-charm text-xl" style="color: #rgb(39, 39, 39) text-shadow: 0 2px 4px rgba(0,0,0,0.1);">JC & Y</span>
-        <div class="h-px w-24" style="background: linear-gradient(to left, transparent, #8bcdcd);"></div>
+        <div class="h-px w-24" style="background: linear-gradient(to right, transparent, #d4af37);"></div>
+        <span class="font-charm text-xl text-[#6b5744]" style="text-shadow: 0 2px 4px rgba(0,0,0,0.1);">JC & Y</span>
+        <div class="h-px w-24" style="background: linear-gradient(to left, transparent, #d4af37);"></div>
       </div>
-
-
-
 
     </div>
   </div>
@@ -192,8 +186,8 @@
 
 <style>
   /* Sombra especial para el día destacado */
-  [style*="background: linear-gradient(135deg, #8bcdcd"] {
-    box-shadow: 0 6px 20px rgba(139, 205, 205, 0.5);
+  [style*="background: linear-gradient(135deg, #d4af37"] {
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
   }
 
   /* Para texto con Charm */
@@ -202,7 +196,7 @@
   }
 
   /* Animación suave en hover del día especial */
-  [style*="background: linear-gradient(135deg, #8bcdcd"]:hover {
+  [style*="background: linear-gradient(135deg, #d4af37"]:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
